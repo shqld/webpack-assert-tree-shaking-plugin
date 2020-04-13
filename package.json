@@ -1,0 +1,40 @@
+{
+    "name": "webpack-assert-tree-shaking-plugin",
+    "version": "0.0.1",
+    "description": "A webpack plugin that asserts the specified files are tree shaken",
+    "license": "MIT",
+    "author": {
+        "name": "Sho Miyamoto",
+        "email": "me@shomiyamoto.dev",
+        "url": "https://github.com/shqld"
+    },
+    "bugs": {
+        "url": "https://github.com/shqld/webpack-assert-tree-shaking-plugin/issues"
+    },
+    "main": "dist/index.js",
+    "types": "src/index.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "build": "webpack",
+        "dev": "yarn build --env dev --watch",
+        "test": "webpack --config test/webpack.config.js"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.5",
+        "@babel/preset-typescript": "^7.9.0",
+        "@types/jest": "^25.2.1",
+        "@types/node": "^13.11.1",
+        "@types/webpack": "^4.41.11",
+        "babel-loader": "^8.1.0",
+        "jest": "^25.3.0",
+        "prettier": "^2.0.4",
+        "typescript": "^3.8.3",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-node-externals": "^1.7.2"
+    }
+}
